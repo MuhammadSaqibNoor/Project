@@ -71,7 +71,17 @@ Sign In
 
 render() {
 return (
-<Card>
+
+
+    <Card>
+    <CardSection>    
+   <View>     
+        <Text style ={{color: '#000000',fontWeight: 'bold' , fontSize: 35, paddingLeft:100, paddingBottom:10}}>Login Form</Text>
+        </View>
+    </CardSection>
+
+
+
 {/* For User ID */}
 <CardSection>
 {}
@@ -102,7 +112,9 @@ onChangeText={password => this.setState({ password })}
 Sign In
 </CustomButton> */}
 </CardSection>
+
 </Card>
+
 );
 }
 }
@@ -114,4 +126,6 @@ alignSelf: "center",
 color: "red"
 }
 };
+
+
 export default LoginForm;
